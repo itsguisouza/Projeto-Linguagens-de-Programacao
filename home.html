@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Trabalho aula/style_home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Loja de Perfumes</title>
+</head>
+
+<body>
+    <!-- Início Menu -->
+    <header id="header">
+        <a id="logo" href="./home.html"><img src="../Trabalho aula/img/Logo.jpeg" alt="Logo Scent Revoir"></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="linkMenu" href="./home.html">Home</a></li>
+                <li><a class="linkMenu" href="./quem-somos.html">Sobre Nós</a></li>
+                <li><a class="linkMenu" href="./produto.html">Produtos</a></li>
+                <li><a class="linkMenu" href="./contato.html">Contato</a></li>
+                <li><a class="linkMenu" href="./blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fim Menu -->
+    <!-- Início Carrossel Página Home -->
+    <div class="container">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" data-bs-interval="1500">
+                    <img src="../Trabalho aula/img/Perfume1.png" class="d-block w-100" alt="Perfume 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="1500">
+                    <img src="../Trabalho aula/img/Perfume2.png" class="d-block w-100" alt="Perfume 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="1500">
+                    <img src="../Trabalho aula/img/Perfume3.png" class="d-block w-100" alt="Perfume 3">
+                </div>
+                <div class="carousel-item" data-bs-interval="1500">
+                    <img src="../Trabalho aula/img/Perfume4.png" class="d-block w-100" alt="Perfume 4">
+                </div>
+            </div>
+            <!-- Início controle carrossel -->
+            <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+            <!-- Fim controle do Carrossel -->
+        </div>
+    </div>
+    <!-- Início do Banner -->
+    <div class="section-banner-home">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-12 col-md-6">
+                    <figure>
+                        <img src="../Trabalho aula/img/banner.jpg" alt="Banner Home">
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6">
+                    <section class="text-banner d-none d-md-block">
+                        <h1>Conheça nossas novas fragrâncias!</h1>
+                        <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                            doloremque in quis error quaerat laudantium cupiditate omnis qui beatae soluta eveniet
+                            dolores. Qui non repellat error? Exercitationem odit expedita molestias?</p>
+                        <a href="#">Saiba Mais!</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Banner -->
+
+    <!-- Início Destaque -->
+    <div class="destaque">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <section class="col-12">
+                    <h2>Lançamentos de Perfumes 2024</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id consequuntur vero expedita. Numquam
+                        molestias accusamus maiores dolor mollitia, blanditiis libero officiis ipsam qui minima veniam
+                        iure magni voluptas accusantium dicta!</p>
+                </section>
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="#"><img src="../Trabalho aula/img/Floral.jpg" alt="Perfume Floral"></a>
+                        <figcaption>Perfume Floral <br> A partir de R$200,00</figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="#"><img src="../Trabalho aula/img/Prive-removebg-preview.png" alt="Perfume Privé"></a>
+                        <figcaption>Perfume Privé <br> A partir de R$580,00</figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="#"><img src="../Trabalho aula/img/Durrat-removebg-preview.png"
+                                alt="Perfume Durrat Al Aroos"></a>
+                        <figcaption>Perfume Durrat Al Aroos <br> A partir de R$300,00</figcaption>
+                    </figure>
+                    <div class="col-12 d-flex justify-content-center">
+                        <a id="saiba-mais" href="#">Saiba Mais!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Destaque -->
+
+        <!-- Início Novidades -->
+        <div class="novidades" id="novidades-mobile">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Início Texto Novidades -->
+                        <section class="text-body">
+                            <h2>Conheça os próximos lançamentos</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ut, soluta adipisci
+                                harum
+                                dolore officiis totam maxime officia exercitationem iste eveniet dolores dignissimos
+                                explicabo
+                                non, quo repudiandae labore illo sint!</p>
+                            <a class="btn-banner" href="#" target="_blank">Saiba Mais!</a>
+                        </section>
+                        <!-- Fim Texto Novidades -->
+                        <div>
+                            <!-- Início Imagem Novidades -->
+                            <div class="col-md-6">
+                                <figure>
+                                    <img class="img-fluid" src="../Trabalho aula/img/Arabe-removebg-preview.png"
+                                        alt="Perfume Árabe">
+                                </figure>
+                            </div>
+                            <!-- Fim Imagem Novidades -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Novidades -->
+
+        <!-- Início Galeria -->
+        <div class="galeria d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Início Texto Galeria -->
+                    <div class="col-12">
+                        <section class="texto-galeria">
+                            <h2>Recomendações da Loja</h2>
+                            <p>Aqui você encontra os perfumes que mais estão saindo. Não fique fora dessa! Vamos fazer
+                                um mundo
+                                mais cheiroso e você pode fazer parte disso conosco.</p>
+                        </section>
+                    </div>
+                    <!-- Fim Texto Galeria -->
+                    <!-- Início Imagem Galeria -->
+                    <div class="gallery col-6 col-md-3">
+                        <img class="img-fluid" src="../Trabalho aula/img/Perfume1.png" alt="Perfume 1">
+                    </div>
+                    <div class="gallery col-6 col-md-3">
+                        <img class="img-fluid" src="../Trabalho aula/img/Perfume2.png" alt="Perfume 2">
+                    </div>
+                    <div class="gallery col-6 col-md-3">
+                        <img class="img-fluid" src="../Trabalho aula/img/Perfume3.png" alt="Perfume 3">
+                    </div>
+                    <!-- Fim Imagem Galeria -->
+                </div>
+            </div>
+        </div>
+        <!-- Fim Galeria -->
+
+        <!-- Início WhatsApp -->
+        <div class="whatsapp">
+            <div class="container-grid logo-whats">
+                <a href="https://wa.link/os84aa" target="_blank">
+                    <img class="pulse" src="../Trabalho aula/img/whatsapp-removebg-preview.png"
+                        alt="Fale com a gente pelo WhatsApp">
+                </a>
+            </div>
+        </div>
+        <!-- Fim WhatsApp -->
+
+        <!-- Início Footer -->
+        <footer class="rodape">
+            <div class="">
+                <div class="row m-0">
+                    <!-- Início Logo -->
+                    <div class="col-md-4" id="logo-rodape">
+                        <figure>
+                            <img src="../Trabalho aula/img/Logo.jpeg" alt="Logo Rodapé">
+                        </figure>
+                    </div>
+                    <!-- Fim Logo -->
+                    <!-- Início Texto Contato -->
+                    <div class="col-md-4">
+                        <div class="info-contato">
+                            <p><strong>Email:</strong></p>
+                            <p>scent_revoir@gmail.com</p> <br>
+                            <p><strong>Endereço:</strong></p>
+                            <p>Rua Alcoléa Freitas, 257, SP</p> <br>
+                            <p><strong>Telefone:</strong></p>
+                            <p>(11) 33245-8547</p>
+                        </div>
+                    </div>
+                    <!-- Fim Texto Contato -->
+                    <!-- Início Redes Sociais -->
+                    <div class="col-md-4">
+                        <figure class="redes-sociais">
+                            <a href="http://facebook.com" target="_blank"><img
+                                    src="../Trabalho aula/img/face-removebg-preview.png" alt="Facebook"></a>
+                            <a href="http://instagram.com" target="_blank"><img
+                                    src="../Trabalho aula/img/insta-removebg-preview.png" alt="Instagram"></a>
+                        </figure>
+                        <br>
+                        <a class="linkFooter" href="#">Home</a>
+                        <a class="linkFooter" href="#">Sobre Nós</a>
+                        <a class="linkFooter" href="#">Produtos</a>
+                        <a class="linkFooter" href="#">Contato</a>
+                        <a class="linkFooter" href="#">Blog</a>
+                    </div>
+                    <!-- Fim Redes Sociais -->
+                    <!-- Início Direitos Autorais -->
+                    <div class="col-12">
+                        <p class="direitos">Todos os direitos reservados © | Scent Revoir | 2024</p>
+                    </div>
+                    <!-- Fim Direitos Autorais -->
+                </div>
+            </div>
+        </footer>
+        <!-- Fim Footer -->
+
+        <!-- Importação do script do Bootstrap para funcionalidade -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
