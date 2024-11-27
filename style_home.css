@@ -102,3 +102,68 @@ ul {
     max-height: 700px;
     width: 40%;
 }
+
+@media (max-width: 600px) {
+    menu {
+        display: block;
+        position: absolute;
+        width: 15em;
+        top: 70px;
+        right: 0px;
+        background:#c58e3c;
+        transition: 0.6s;
+        z-index: 500;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    menu-li {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin: 0 1rem;
+        border-bottom: 2px solid #94c023de (0, 0, 0, 0,05);
+    }
+#nav.active #menu {
+    height: calc(100vh - 700px);
+    visibility: visible;
+    overflow-y: hidden;
+}
+#btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    gap: 0.5rem;
+}
+#hamburger {
+    border-top: 2px solid;
+    /* melhorando o hamburger > Espessura da linha */
+    width: 30px;
+    /* Alterar a largura do menu hamburger */
+    color:#157896
+    /* Alternar cor do hamburger */
+}
+#hamburger::after,
+#hamburger::before{
+    content: '';
+    display: block;
+    width: 30px;
+    /* Altera a largura do menu hamburger */
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 4px;
+    position: border-top 2px solid;
+}
+#nav.active #hamburger{
+    border-top-color: transparent;
+}
+#nav.active #hamburger{
+    transform: rotate(135dgr);
+}
+#nav.active #hamburger::after{
+    transform: rotate(-135dgr);
+    top: -7px;
+}
+}
