@@ -22,18 +22,18 @@ function toggleMenu(event) {
 
     // Verifica se o menu está aberto ou não
     const isActive = nav.classList.contains('active');
-    
+
     // Atualiza o atributo 'aria-expanded' para melhorar a acessibilidade do menu
-    event.currentTarget.setAtribute('aria-expanded, isActive');
+    event.currentTarget.setAttribute('aria-expanded', isActive);
 
     // Define o texto do atributo 'aria-label' dependendo do estado do menu (aberto/fechado)
     if (isActive) {
-        event.currentTarget.setAtribute('aria-label', 'Fechar Menu');
-     } else {
-            event.currentTarget.setAtribute('aria label', 'Abrir Menu');
-        }
+        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+    } else {
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
     }
+}
 
-    // Adiciona eventos de 'click' e 'touchstart' para ativar a função toggleMenu ao interagir com o botão
-    btnMobile.addEventListener('click', toggleMenu);
-    btnMobile.addEventListener('touchstart', toggleMenu);
+// Adiciona eventos de 'click' e 'touchstart' para ativar a função toggleMenu ao interagir com o botão
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
