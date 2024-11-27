@@ -79,7 +79,6 @@ ul {
 
 #btn-mobile {
     display: none;
-
 }
 
 .container {
@@ -104,7 +103,7 @@ ul {
 }
 
 @media (max-width: 600px) {
-    menu {
+    #menu {
         display: block;
         position: absolute;
         width: 15em;
@@ -118,14 +117,14 @@ ul {
         visibility: hidden;
         overflow-y: hidden;
     }
-    menu-li {
+    #menu-li {
         padding-top: 30px;
-        padding-bottom: 0px;
+        padding-bottom: 12px;
         margin: 0 1rem;
         border-bottom: 2px solid #94c023de (0, 0, 0, 0,05);
     }
 #nav.active #menu {
-    height: calc(100vh - 700px);
+    height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: hidden;
 }
@@ -135,6 +134,7 @@ ul {
     font-size: 1rem;
     border: none;
     background: none;
+    cursor: pointer;
     gap: 0.5rem;
 }
 #hamburger {
@@ -154,12 +154,13 @@ ul {
     height: 2px;
     background-color: currentColor;
     margin-top: 4px;
-    position: border-top 2px solid;
+    position: relative;
+    border-top: 2px solid;
 }
 #nav.active #hamburger{
     border-top-color: transparent;
 }
-#nav.active #hamburger{
+#nav.active #hamburger::before{
     transform: rotate(135dgr);
 }
 #nav.active #hamburger::after{
